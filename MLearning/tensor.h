@@ -24,6 +24,12 @@ shape: 2,3,4 stride 2*3*4 / 1, 2*3*4 / 2*3, 1
 at({1,1,2}) offset = 1 *12 + 1 *4 + 2 *1 = 18
 
 ***/
+
+#if defined(__x86_64__) || defined(_M_X64) || defined(__i386__)
+#include <imnintrin.h>
+#define HAS_AVX2
+#endif
+
 class Tensor {
 public:
     std::vector<size_t> shape;      // 各维度大小，如 {2, 3, 4}
@@ -85,7 +91,7 @@ public:
     // 元素总数
     size_t numel() const { return data.size(); }
 
-    size_t nidm() const {return shape.size();}
+    size_t ndim() const {return shape.size();}
     // ========== 维度转换 API ==========
 
     // 展平为 1D
@@ -143,6 +149,17 @@ public:
         return res;
     }
 
+    bool allclose(const Tensor& other, double rtol = 1e-5, double atol = 1e-8) const {
+        if (shape != other.shape) return false;
+        for (size_t i = 0; i < numel(); ++i) {
+            double diff = std::abs(data[i] - other.data[i]);
+            if (diff > atol + rtol * std::abs(other.data[i])) return false;
+        }
+        return true;
+    }
+    
+    
+    
     void print_() const {
         std::cout << "Shape: (";
         for (size_t i = 0; i < shape.size(); ++i) {
@@ -233,6 +250,21 @@ public:
             res.data[i] = dist(gen);
         }
         return res;
+    }
+    
+    Tensor matmul_naive(const Tensor&B) const{
+        assert(ndim() == 2 && B.ndim() == 2);
+        assert(shape[1] == B.shape[0]);
+        size_t M = shape[0], K = shape[1], N = B.shape[1];
+        Tensor C({M, N}, 0.0);
+        for (size_t i = 0; i < M; i++) {
+            for(size_t j = 0; j < N; j++){
+                double sum = .0;
+                for(size_t k = 0; k < K; k++) sum += data[i * K + k] * B.data[k * N + j];
+                C.data[i * N + j] = sum;
+            }
+        }
+        return C;
     }
     
 private:

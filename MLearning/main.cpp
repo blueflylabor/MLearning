@@ -3,12 +3,13 @@
 
 void test1();
 void test2();
+void test3();
 
 // 使用示例
 int main() {
     Tensor t1({1, 3, 4}, 2.);
     t1.print();
-
+    test3();
 
     return 0;
 }
@@ -46,4 +47,11 @@ void test2(){
     oss << double(1) << 3.14159265535 << 3.14 << 3.14159;
     std::cout << oss.str();
     
+}
+
+void test3(){
+    size_t M = 512, K = 512, N = 512;
+    auto a = Tensor::randn({M,K}, 123.);
+    auto b = Tensor::randn({K,N}, 456.);
+    a.matmul_naive(b);
 }
