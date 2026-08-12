@@ -260,13 +260,60 @@ public:
         for (size_t i = 0; i < M; i++) {
             for(size_t j = 0; j < N; j++){
                 double sum = .0;
-                for(size_t k = 0; k < K; k++) sum += data[i * K + k] * B.data[k * N + j];
+                for(size_t k = 0; k < K; k++)
+                    sum += data[i * K + k] * B.data[k * N + j];
                 C.data[i * N + j] = sum;
             }
         }
         return C;
     }
-    
+    Tensor matmul_1X4(const Tensor &B) const{
+        assert(ndim() == 2 && B.ndim() == 2);
+        assert(shape[1] == B.shape[0]);
+        size_t M = shape[0], K = shape[1], N = B.shape[1];
+        Tensor C({M, N}, 0.0);
+        for(size_t i = 0; i < M; i++)
+            for(size_t j = 0; j < N; j+=4){
+                size_t j_end = std::min(j + 4, N);
+                for(size_t k = 0; k < K; ++k){
+                    double a = data[i * K + k];
+                    for(size_t jj = j; jj < j_end; ++jj){
+                        C.data[i * N + jj] += a * B.data[k * N + jj];
+                    }
+                }
+            }
+        return C;
+    }
+
+    Tensor matmul_1x4_reg(const Tensor& B) const {
+        assert(ndim() == 2 && B.ndim() == 2);
+        assert(shape[1] == B.shape[0]);
+        size_t M = shape[0], K = shape[1], N = B.shape[1];
+        Tensor C({M, N}, 0.0);
+
+        for (size_t i = 0; i < M; ++i) {
+            for (size_t j = 0; j < N; j += 4) {
+                size_t j_end = std::min(j + 4, N);
+                // 初始化 C 累加器（寄存器）
+                double c0 = 0, c1 = 0, c2 = 0, c3 = 0;
+                
+                for (size_t k = 0; k < K; ++k) {
+                    double a_reg = data[i * K + k]; // 加载到寄存器，复用 4 次
+                    if (j_end - j > 0) c0 += a_reg * B.data[k * N + j + 0];
+                    if (j_end - j > 1) c1 += a_reg * B.data[k * N + j + 1];
+                    if (j_end - j > 2) c2 += a_reg * B.data[k * N + j + 2];
+                    if (j_end - j > 3) c3 += a_reg * B.data[k * N + j + 3];
+                }
+                // 写回内存
+                if (j_end - j > 0) C.data[i * N + j + 0] = c0;
+                if (j_end - j > 1) C.data[i * N + j + 1] = c1;
+                if (j_end - j > 2) C.data[i * N + j + 2] = c2;
+                if (j_end - j > 3) C.data[i * N + j + 3] = c3;
+            }
+        }
+        return C;
+    }
+
 private:
     size_t compute_max_width() const {
         size_t max_w = 1;

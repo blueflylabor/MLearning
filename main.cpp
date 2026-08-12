@@ -7,8 +7,11 @@ void test3();
 
 // 使用示例
 int main() {
-    Tensor t1({1, 3, 4}, 2.);
+    Tensor t1({3, 4}, 2.);
     t1.print();
+    auto t2 = Tensor::randn({4, 5}, 1.);
+    auto t3 = t1.matmul_naive(t2);
+    t3.print();
     test3();
 
     return 0;
