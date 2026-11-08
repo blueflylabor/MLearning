@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named raii
+
+# Build rule for target.
+raii: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 raii
+.PHONY : raii
+
+# fast build rule for target.
+raii/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raii.dir/build.make CMakeFiles/raii.dir/build
+.PHONY : raii/fast
+
+#=============================================================================
 # Target rules for targets named engine3_cv_demo
 
 # Build rule for target.
@@ -166,6 +179,30 @@ eigen_cv_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine3_cv_demo.dir/build.make CMakeFiles/engine3_cv_demo.dir/eigen_cv_test.cpp.s
 .PHONY : eigen_cv_test.cpp.s
 
+raii.o: raii.cpp.o
+.PHONY : raii.o
+
+# target to build an object file
+raii.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raii.dir/build.make CMakeFiles/raii.dir/raii.cpp.o
+.PHONY : raii.cpp.o
+
+raii.i: raii.cpp.i
+.PHONY : raii.i
+
+# target to preprocess a source file
+raii.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raii.dir/build.make CMakeFiles/raii.dir/raii.cpp.i
+.PHONY : raii.cpp.i
+
+raii.s: raii.cpp.s
+.PHONY : raii.s
+
+# target to generate assembly for a file
+raii.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raii.dir/build.make CMakeFiles/raii.dir/raii.cpp.s
+.PHONY : raii.cpp.s
+
 tensor_test.o: tensor_test.cpp.o
 .PHONY : tensor_test.o
 
@@ -199,10 +236,14 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... engine3_cv_demo"
+	@echo "... raii"
 	@echo "... tensorTest"
 	@echo "... eigen_cv_test.o"
 	@echo "... eigen_cv_test.i"
 	@echo "... eigen_cv_test.s"
+	@echo "... raii.o"
+	@echo "... raii.i"
+	@echo "... raii.s"
 	@echo "... tensor_test.o"
 	@echo "... tensor_test.i"
 	@echo "... tensor_test.s"

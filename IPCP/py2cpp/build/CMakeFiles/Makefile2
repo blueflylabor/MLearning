@@ -63,11 +63,13 @@ CMAKE_BINARY_DIR = /Users/yancey/Desktop/MLearning/IPCP/py2cpp/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/raii.dir/all
 all: CMakeFiles/engine3_cv_demo.dir/all
 all: CMakeFiles/tensorTest.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
+codegen: CMakeFiles/raii.dir/codegen
 codegen: CMakeFiles/engine3_cv_demo.dir/codegen
 codegen: CMakeFiles/tensorTest.dir/codegen
 .PHONY : codegen
@@ -77,9 +79,42 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/raii.dir/clean
 clean: CMakeFiles/engine3_cv_demo.dir/clean
 clean: CMakeFiles/tensorTest.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/raii.dir
+
+# All Build rule for target.
+CMakeFiles/raii.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raii.dir/build.make CMakeFiles/raii.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raii.dir/build.make CMakeFiles/raii.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yancey/Desktop/MLearning/IPCP/py2cpp/build/CMakeFiles --progress-num=3,4 "Built target raii"
+.PHONY : CMakeFiles/raii.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/raii.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yancey/Desktop/MLearning/IPCP/py2cpp/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/raii.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yancey/Desktop/MLearning/IPCP/py2cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/raii.dir/rule
+
+# Convenience name for target.
+raii: CMakeFiles/raii.dir/rule
+.PHONY : raii
+
+# codegen rule for target.
+CMakeFiles/raii.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raii.dir/build.make CMakeFiles/raii.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yancey/Desktop/MLearning/IPCP/py2cpp/build/CMakeFiles --progress-num=3,4 "Finished codegen for target raii"
+.PHONY : CMakeFiles/raii.dir/codegen
+
+# clean rule for target.
+CMakeFiles/raii.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raii.dir/build.make CMakeFiles/raii.dir/clean
+.PHONY : CMakeFiles/raii.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/engine3_cv_demo.dir
@@ -120,7 +155,7 @@ CMakeFiles/engine3_cv_demo.dir/clean:
 CMakeFiles/tensorTest.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tensorTest.dir/build.make CMakeFiles/tensorTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tensorTest.dir/build.make CMakeFiles/tensorTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yancey/Desktop/MLearning/IPCP/py2cpp/build/CMakeFiles --progress-num=3,4 "Built target tensorTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yancey/Desktop/MLearning/IPCP/py2cpp/build/CMakeFiles --progress-num=5,6 "Built target tensorTest"
 .PHONY : CMakeFiles/tensorTest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -137,7 +172,7 @@ tensorTest: CMakeFiles/tensorTest.dir/rule
 # codegen rule for target.
 CMakeFiles/tensorTest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tensorTest.dir/build.make CMakeFiles/tensorTest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yancey/Desktop/MLearning/IPCP/py2cpp/build/CMakeFiles --progress-num=3,4 "Finished codegen for target tensorTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yancey/Desktop/MLearning/IPCP/py2cpp/build/CMakeFiles --progress-num=5,6 "Finished codegen for target tensorTest"
 .PHONY : CMakeFiles/tensorTest.dir/codegen
 
 # clean rule for target.

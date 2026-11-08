@@ -13,7 +13,10 @@ find_package(Eigen3 REQUIRED NO_MODULE)
 find_package(OpenCV REQUIRED)
 
 # 4. 添加你的可执行文件目标
+add_executable(raii raii.cpp)
 add_executable(engine3_cv_demo eigen_cv_test.cpp)
+
+add_executable(l3cache l3cache.cpp)
 
 add_executable(tensorTest tensor_test.cpp)
 target_link_libraries(tensorTest ${OpenCV_LIBS})
