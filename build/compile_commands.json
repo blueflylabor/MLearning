@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/yancey/Desktop/MLearning/build",
+  "command": "/usr/bin/clang++ -isystem /opt/homebrew/Cellar/opencv/5.0.0_11/include/opencv5 -g -std=gnu++17 -arch arm64 -o CMakeFiles/homework_filters.dir/src/main.cpp.o -c /Users/yancey/Desktop/MLearning/IPCP/lab2exercise/src/main.cpp",
+  "file": "/Users/yancey/Desktop/MLearning/IPCP/lab2exercise/src/main.cpp",
+  "output": "/Users/yancey/Desktop/MLearning/build/CMakeFiles/homework_filters.dir/src/main.cpp.o"
+}
+]
