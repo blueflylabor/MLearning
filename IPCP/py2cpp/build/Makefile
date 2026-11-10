@@ -143,6 +143,32 @@ engine3_cv_demo/fast:
 .PHONY : engine3_cv_demo/fast
 
 #=============================================================================
+# Target rules for targets named l3cache
+
+# Build rule for target.
+l3cache: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 l3cache
+.PHONY : l3cache
+
+# fast build rule for target.
+l3cache/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/l3cache.dir/build.make CMakeFiles/l3cache.dir/build
+.PHONY : l3cache/fast
+
+#=============================================================================
+# Target rules for targets named gemm
+
+# Build rule for target.
+gemm: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gemm
+.PHONY : gemm
+
+# fast build rule for target.
+gemm/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm.dir/build.make CMakeFiles/gemm.dir/build
+.PHONY : gemm/fast
+
+#=============================================================================
 # Target rules for targets named tensorTest
 
 # Build rule for target.
@@ -154,6 +180,19 @@ tensorTest: cmake_check_build_system
 tensorTest/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tensorTest.dir/build.make CMakeFiles/tensorTest.dir/build
 .PHONY : tensorTest/fast
+
+#=============================================================================
+# Target rules for targets named fdf
+
+# Build rule for target.
+fdf: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fdf
+.PHONY : fdf
+
+# fast build rule for target.
+fdf/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/build
+.PHONY : fdf/fast
 
 eigen_cv_test.o: eigen_cv_test.cpp.o
 .PHONY : eigen_cv_test.o
@@ -178,6 +217,78 @@ eigen_cv_test.s: eigen_cv_test.cpp.s
 eigen_cv_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine3_cv_demo.dir/build.make CMakeFiles/engine3_cv_demo.dir/eigen_cv_test.cpp.s
 .PHONY : eigen_cv_test.cpp.s
+
+freDomFilter.o: freDomFilter.cpp.o
+.PHONY : freDomFilter.o
+
+# target to build an object file
+freDomFilter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/freDomFilter.cpp.o
+.PHONY : freDomFilter.cpp.o
+
+freDomFilter.i: freDomFilter.cpp.i
+.PHONY : freDomFilter.i
+
+# target to preprocess a source file
+freDomFilter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/freDomFilter.cpp.i
+.PHONY : freDomFilter.cpp.i
+
+freDomFilter.s: freDomFilter.cpp.s
+.PHONY : freDomFilter.s
+
+# target to generate assembly for a file
+freDomFilter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/freDomFilter.cpp.s
+.PHONY : freDomFilter.cpp.s
+
+gemm.o: gemm.cpp.o
+.PHONY : gemm.o
+
+# target to build an object file
+gemm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm.dir/build.make CMakeFiles/gemm.dir/gemm.cpp.o
+.PHONY : gemm.cpp.o
+
+gemm.i: gemm.cpp.i
+.PHONY : gemm.i
+
+# target to preprocess a source file
+gemm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm.dir/build.make CMakeFiles/gemm.dir/gemm.cpp.i
+.PHONY : gemm.cpp.i
+
+gemm.s: gemm.cpp.s
+.PHONY : gemm.s
+
+# target to generate assembly for a file
+gemm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm.dir/build.make CMakeFiles/gemm.dir/gemm.cpp.s
+.PHONY : gemm.cpp.s
+
+l3cache.o: l3cache.cpp.o
+.PHONY : l3cache.o
+
+# target to build an object file
+l3cache.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/l3cache.dir/build.make CMakeFiles/l3cache.dir/l3cache.cpp.o
+.PHONY : l3cache.cpp.o
+
+l3cache.i: l3cache.cpp.i
+.PHONY : l3cache.i
+
+# target to preprocess a source file
+l3cache.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/l3cache.dir/build.make CMakeFiles/l3cache.dir/l3cache.cpp.i
+.PHONY : l3cache.cpp.i
+
+l3cache.s: l3cache.cpp.s
+.PHONY : l3cache.s
+
+# target to generate assembly for a file
+l3cache.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/l3cache.dir/build.make CMakeFiles/l3cache.dir/l3cache.cpp.s
+.PHONY : l3cache.cpp.s
 
 raii.o: raii.cpp.o
 .PHONY : raii.o
@@ -236,11 +347,23 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... engine3_cv_demo"
+	@echo "... fdf"
+	@echo "... gemm"
+	@echo "... l3cache"
 	@echo "... raii"
 	@echo "... tensorTest"
 	@echo "... eigen_cv_test.o"
 	@echo "... eigen_cv_test.i"
 	@echo "... eigen_cv_test.s"
+	@echo "... freDomFilter.o"
+	@echo "... freDomFilter.i"
+	@echo "... freDomFilter.s"
+	@echo "... gemm.o"
+	@echo "... gemm.i"
+	@echo "... gemm.s"
+	@echo "... l3cache.o"
+	@echo "... l3cache.i"
+	@echo "... l3cache.s"
 	@echo "... raii.o"
 	@echo "... raii.i"
 	@echo "... raii.s"

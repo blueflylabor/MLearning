@@ -1,0 +1,114 @@
+\documentclass[11pt,answers]{exam}
+
+\footer{}{\thepage}{}
+
+\RequirePackage{amssymb, amsfonts, amsmath, latexsym, verbatim, xspace, setspace}
+\RequirePackage{tikz}
+\usepackage[margin=1in]{geometry}
+\usepackage{eso-pic}
+
+\usepackage{subcaption}
+\usepackage{hhline}
+
+\newcommand{\class}{Introduction to Artificial Intelligence}
+\newcommand{\shortclass}{Intro2AI}
+\newcommand{\term}{Winter semester 2026-2027}
+\newcommand{\examnum}{Assignment 1}
+\newcommand{\examdate}{9/11/2026}
+
+\newcommand{\three}[3]{\langle #1,#2,#3 \rangle}
+\newcommand{\two}[2]{\langle #1,#2 \rangle}
+
+\singlespacing
+
+\parindent 0ex
+
+\begin{document}
+\includegraphics[scale=.2]{logo.png}
+\vspace{.5cm}
+
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\examnum}{\shortclass}{\examdate}
+\runningheadrule
+
+\begin{tabular}{p{2.8in} r l}
+    \textbf{\class} &&\\
+    \textbf{\term} &&\\
+    \textbf{\examnum} & \textbf{Name, Vorname:} & \makebox[1.85in]{Guoxu Yang}\\
+    \textbf{\examdate} & \textbf{Matrikel-Nr.:} & \makebox[1.85in]{3440270}
+\end{tabular}\\
+\rule[1ex]{\textwidth}{.1pt}
+
+This assignment contains \textbf{\numpages\ pages} (including this cover page) and \textbf{\numquestions\ problems}. Fill your personal details above.\\
+
+You \textbf{can} use any tool at your disposal, including slides, books, and AIs (e.g., ChatGPT).
+
+Each solution \textbf{should} include exclusively what each exercise asks. Do not add additional information, please be concise. You have to write your solution in the provided Latex and compile it in PDF (ensure to use the provided "logo.png" file too).
+\\
+\begin{minipage}[t]{.6\columnwidth}
+    \vspace{0pt}
+    \textbf{Grading:} Please \textbf{submit} the compiled PDF with your solutions on WueCampus. To pass a problem ($1=\texttt{Passed},0=\texttt{Failed}$), it is \textbf{sufficient} to write a correct solution concisely. To pass the whole assignment and make it count for the final grade of the course, you need to pass \textbf{all} the problems. 
+\end{minipage}
+\hspace{1cm}
+\begin{minipage}[t]{.25\columnwidth}
+    \vspace{0pt}
+    \gradetablestretch{2}
+    \vqword{Problem}
+    \addpoints
+    \gradetable[v]%[pages]  % Use [pages] to have grading table by page instead of question
+\end{minipage}
+
+\newpage
+
+\begin{questions}
+\question After training, you must put the tennis balls into three baskets: \texttt{Left}, \texttt{Middle}, \texttt{Right}. There are
+infinitely many balls on the court. The possible actions are:
+\begin{itemize}
+\item \texttt{Fill}: completely fill a basket from the court;
+\item \texttt{Empty}: empty a basket onto the court;
+\item \texttt{Move}: pour balls from one basket into another, stopping when
+      the source is empty or the destination is full.
+\end{itemize}
+Each action costs one step. Ignore actions that do not change the state.
+Use a programming language of your choice to find a \textbf{shortest action sequence} for each case.
+
+Use these abbreviations: \texttt{FL}, \texttt{FM}, \texttt{FR} for
+\texttt{Fill}; \texttt{EL}, \texttt{EM}, \texttt{ER} for \texttt{Empty};
+\texttt{MLM}, \texttt{MLR}, \texttt{MML}, \texttt{MMR}, \texttt{MRL},
+\texttt{MRM} for \texttt{Move} (e.g., \texttt{MLR} means left to right).
+
+\textbf{Only short written answers are requested here:}
+name the search algorithm once in part (a), then list the actions in order
+for each part.
+
+\begin{parts}
+\part[1] There are three baskets with capacities
+\texttt{left}=13, \texttt{middle}=19, and \texttt{right}=31.
+Starting from $\three{0}{0}{0}$, reach $\three{0}{7}{21}$.
+\textbf{Which search algorithm did you use? Give one shortest sequence
+of actions.}
+\begin{solution}[1.0in]\\
+\textbf{Algorithm:} Breadth-First Search (BFS)\\[0.5ex]
+\textbf{Actions:} FL $\rightarrow$ FM $\rightarrow$ MLR $\rightarrow$ FL $\rightarrow$ MLR $\rightarrow$ FL $\rightarrow$ MLR $\rightarrow$ ER $\rightarrow$ MMR $\rightarrow$ FM $\rightarrow$ MMR $\rightarrow$ ER $\rightarrow$ MLR $\rightarrow$ FL $\rightarrow$ MLR
+\end{solution}
+
+\part[1] Use the \emph{same} three baskets and the same goal
+$\three{0}{7}{21}$, but start from $\three{5}{13}{19}$.
+\textbf{Give one shortest sequence of actions.}
+\begin{solution}[1.0in]\\
+\textbf{Actions:} FL $\rightarrow$ FM $\rightarrow$ MMR $\rightarrow$ ER $\rightarrow$ MLR $\rightarrow$ FL $\rightarrow$ MLR $\rightarrow$ FL $\rightarrow$ MLR $\rightarrow$ ER $\rightarrow$ MLR $\rightarrow$ FL $\rightarrow$ MLR
+\end{solution}
+
+\part[1] Now use \emph{only} two baskets with capacities
+\texttt{left}=13 and \texttt{right}=31.
+Starting from $\two{0}{0}$, reach $\two{13}{3}$.
+The same action rules apply; only \texttt{FL}, \texttt{FR},
+\texttt{EL}, \texttt{ER}, \texttt{MLR}, and \texttt{MRL} are available.
+\textbf{Give one shortest sequence of actions.}
+\begin{solution}[1.0in]\\
+\textbf{Actions:} FL $\rightarrow$ MLR $\rightarrow$ FL $\rightarrow$ MLR $\rightarrow$ FL $\rightarrow$ MLR $\rightarrow$ ER $\rightarrow$ MLR $\rightarrow$ FL $\rightarrow$ MLR $\rightarrow$ FL $\rightarrow$ MLR $\rightarrow$ ER $\rightarrow$ MLR $\rightarrow$ FL
+\end{solution}
+\end{parts}
+\end{questions}
+\end{document}

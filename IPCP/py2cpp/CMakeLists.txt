@@ -11,16 +11,17 @@ find_package(Eigen3 REQUIRED NO_MODULE)
 
 # 3. 寻找 OpenCV 库
 find_package(OpenCV REQUIRED)
-
+include_directories(${OpenCV_INCLUDE_DIRS} ${EIGEN3_INCLUDE_DIR})
 # 4. 添加你的可执行文件目标
 add_executable(raii raii.cpp)
 add_executable(engine3_cv_demo eigen_cv_test.cpp)
-
 add_executable(l3cache l3cache.cpp)
-
+add_executable(gemm gemm.cpp)
+target_link_libraries(gemm PRIVATE ${OpenCV_LIBS} Eigen3::Eigen)
 add_executable(tensorTest tensor_test.cpp)
 target_link_libraries(tensorTest ${OpenCV_LIBS})
-
+add_executable(fdf freDomFilter.cpp)
+target_link_libraries(fdf PRIVATE ${OpenCV_LIBS} Eigen3::Eigen)
 # 5. 链接库到目标
 # Eigen3::Eigen 和 ${OpenCV_LIBS} 会自动传递对应的 Include 路径和 Lib 路径
 target_link_libraries(engine3_cv_demo

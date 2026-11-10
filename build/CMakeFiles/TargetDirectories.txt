@@ -1,3 +1,8 @@
-/Users/yancey/Desktop/MLearning/build/CMakeFiles/homework_filters.dir
+/Users/yancey/Desktop/MLearning/build/CMakeFiles/raii.dir
+/Users/yancey/Desktop/MLearning/build/CMakeFiles/engine3_cv_demo.dir
+/Users/yancey/Desktop/MLearning/build/CMakeFiles/l3cache.dir
+/Users/yancey/Desktop/MLearning/build/CMakeFiles/gemm.dir
+/Users/yancey/Desktop/MLearning/build/CMakeFiles/tensorTest.dir
+/Users/yancey/Desktop/MLearning/build/CMakeFiles/fdf.dir
 /Users/yancey/Desktop/MLearning/build/CMakeFiles/edit_cache.dir
 /Users/yancey/Desktop/MLearning/build/CMakeFiles/rebuild_cache.dir

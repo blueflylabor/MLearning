@@ -1,4 +1,4 @@
-# Install script for directory: /Users/yancey/Desktop/MLearning/IPCP/lab2exercise
+# Install script for directory: /Users/yancey/Desktop/MLearning/IPCP/py2cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

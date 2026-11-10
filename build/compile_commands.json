@@ -1,8 +1,38 @@
 [
 {
   "directory": "/Users/yancey/Desktop/MLearning/build",
-  "command": "/usr/bin/clang++ -isystem /opt/homebrew/Cellar/opencv/5.0.0_11/include/opencv5 -g -std=gnu++17 -arch arm64 -o CMakeFiles/homework_filters.dir/src/main.cpp.o -c /Users/yancey/Desktop/MLearning/IPCP/lab2exercise/src/main.cpp",
-  "file": "/Users/yancey/Desktop/MLearning/IPCP/lab2exercise/src/main.cpp",
-  "output": "/Users/yancey/Desktop/MLearning/build/CMakeFiles/homework_filters.dir/src/main.cpp.o"
+  "command": "/usr/bin/clang++ -I/opt/homebrew/Cellar/opencv/5.0.0_11/include/opencv5 -g -std=gnu++17 -arch arm64 -o CMakeFiles/raii.dir/raii.cpp.o -c /Users/yancey/Desktop/MLearning/IPCP/py2cpp/raii.cpp",
+  "file": "/Users/yancey/Desktop/MLearning/IPCP/py2cpp/raii.cpp",
+  "output": "/Users/yancey/Desktop/MLearning/build/CMakeFiles/raii.dir/raii.cpp.o"
+},
+{
+  "directory": "/Users/yancey/Desktop/MLearning/build",
+  "command": "/usr/bin/clang++ -isystem /opt/homebrew/Cellar/opencv/5.0.0_11/include/opencv5 -isystem /opt/homebrew/include/eigen3 -g -std=gnu++17 -arch arm64 -o CMakeFiles/engine3_cv_demo.dir/eigen_cv_test.cpp.o -c /Users/yancey/Desktop/MLearning/IPCP/py2cpp/eigen_cv_test.cpp",
+  "file": "/Users/yancey/Desktop/MLearning/IPCP/py2cpp/eigen_cv_test.cpp",
+  "output": "/Users/yancey/Desktop/MLearning/build/CMakeFiles/engine3_cv_demo.dir/eigen_cv_test.cpp.o"
+},
+{
+  "directory": "/Users/yancey/Desktop/MLearning/build",
+  "command": "/usr/bin/clang++ -I/opt/homebrew/Cellar/opencv/5.0.0_11/include/opencv5 -g -std=gnu++17 -arch arm64 -o CMakeFiles/l3cache.dir/l3cache.cpp.o -c /Users/yancey/Desktop/MLearning/IPCP/py2cpp/l3cache.cpp",
+  "file": "/Users/yancey/Desktop/MLearning/IPCP/py2cpp/l3cache.cpp",
+  "output": "/Users/yancey/Desktop/MLearning/build/CMakeFiles/l3cache.dir/l3cache.cpp.o"
+},
+{
+  "directory": "/Users/yancey/Desktop/MLearning/build",
+  "command": "/usr/bin/clang++ -isystem /opt/homebrew/Cellar/opencv/5.0.0_11/include/opencv5 -isystem /opt/homebrew/include/eigen3 -g -std=gnu++17 -arch arm64 -o CMakeFiles/gemm.dir/gemm.cpp.o -c /Users/yancey/Desktop/MLearning/IPCP/py2cpp/gemm.cpp",
+  "file": "/Users/yancey/Desktop/MLearning/IPCP/py2cpp/gemm.cpp",
+  "output": "/Users/yancey/Desktop/MLearning/build/CMakeFiles/gemm.dir/gemm.cpp.o"
+},
+{
+  "directory": "/Users/yancey/Desktop/MLearning/build",
+  "command": "/usr/bin/clang++ -isystem /opt/homebrew/Cellar/opencv/5.0.0_11/include/opencv5 -g -std=gnu++17 -arch arm64 -o CMakeFiles/tensorTest.dir/tensor_test.cpp.o -c /Users/yancey/Desktop/MLearning/IPCP/py2cpp/tensor_test.cpp",
+  "file": "/Users/yancey/Desktop/MLearning/IPCP/py2cpp/tensor_test.cpp",
+  "output": "/Users/yancey/Desktop/MLearning/build/CMakeFiles/tensorTest.dir/tensor_test.cpp.o"
+},
+{
+  "directory": "/Users/yancey/Desktop/MLearning/build",
+  "command": "/usr/bin/clang++ -isystem /opt/homebrew/Cellar/opencv/5.0.0_11/include/opencv5 -isystem /opt/homebrew/include/eigen3 -g -std=gnu++17 -arch arm64 -o CMakeFiles/fdf.dir/freDomFilter.cpp.o -c /Users/yancey/Desktop/MLearning/IPCP/py2cpp/freDomFilter.cpp",
+  "file": "/Users/yancey/Desktop/MLearning/IPCP/py2cpp/freDomFilter.cpp",
+  "output": "/Users/yancey/Desktop/MLearning/build/CMakeFiles/fdf.dir/freDomFilter.cpp.o"
 }
 ]

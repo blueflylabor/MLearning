@@ -61,5 +61,16 @@ void process_vector(const float* data, size_t size){
 int main(){
     std::unique_ptr<VectorBuffer> vector_buffer = std::make_unique<VectorBuffer>(1024);
     process_vector(vector_buffer->d_ptr, vector_buffer->size);
+
+    size_t N = 5;
+    DeviceTensorBuffer tensor_a(N), tensor_b(N), tensor_out(N);
+    std::iota(tensor_a.data(), tensor_a.data()+ N, 1.0f);
+    std::fill(tensor_b.data(), tensor_b.data()+ N, 10.0f);
+    vector_add(tensor_a.data(), tensor_b.data(),tensor_out.data(), N);
+    std::cout << "Calculate:";
+    for(size_t i = 0; i < N; ++i){
+        std::cout << tensor_out.data()[i] << " ";
+    }
+    std::cout << "\n";
     return 0;
 }
