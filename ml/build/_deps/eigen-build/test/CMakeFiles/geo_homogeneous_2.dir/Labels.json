@@ -1,0 +1,16 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src/test/geo_homogeneous.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"BuildOfficial"
+		],
+		"name" : "geo_homogeneous_2"
+	}
+}

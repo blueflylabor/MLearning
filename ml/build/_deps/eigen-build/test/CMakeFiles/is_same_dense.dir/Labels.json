@@ -1,0 +1,16 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src/test/is_same_dense.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"BuildOfficial"
+		],
+		"name" : "is_same_dense"
+	}
+}
