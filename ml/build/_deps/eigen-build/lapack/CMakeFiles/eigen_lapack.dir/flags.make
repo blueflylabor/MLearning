@@ -5,7 +5,7 @@
 # compile Fortran with /opt/homebrew/bin/gfortran
 CXX_DEFINES = -Deigen_lapack_EXPORTS
 
-CXX_INCLUDES = -I/Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src -I/Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src/lapack/../blas
+CXX_INCLUDES = -I/Users/yancey/playground/mlab/ml/build/_deps/eigen-src -I/Users/yancey/playground/mlab/ml/build/_deps/eigen-src/lapack/../blas
 
 CXX_FLAGSarm64 =  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -O3 -DNDEBUG -std=gnu++17 -arch arm64 -fPIC
 
@@ -13,7 +13,7 @@ CXX_FLAGS =  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subs
 
 Fortran_DEFINES = -Deigen_lapack_EXPORTS
 
-Fortran_INCLUDES = -I/Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src -I/Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src/lapack/../blas
+Fortran_INCLUDES = -I/Users/yancey/playground/mlab/ml/build/_deps/eigen-src -I/Users/yancey/playground/mlab/ml/build/_deps/eigen-src/lapack/../blas
 
 Fortran_FLAGSarm64 = -O3 -fPIC
 

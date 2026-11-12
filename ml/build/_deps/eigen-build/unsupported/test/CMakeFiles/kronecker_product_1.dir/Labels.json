@@ -2,7 +2,7 @@
 	"sources" : 
 	[
 		{
-			"file" : "/Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src/unsupported/test/kronecker_product.cpp"
+			"file" : "/Users/yancey/playground/mlab/ml/build/_deps/eigen-src/unsupported/test/kronecker_product.cpp"
 		}
 	],
 	"target" : 

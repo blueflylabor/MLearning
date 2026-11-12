@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src -I/Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src/unsupported/test/../../test -I/Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src/unsupported/test/../../unsupported -I/Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src/unsupported/test/../../Eigen -I/Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/unsupported/test/../../test
+CXX_INCLUDES = -I/Users/yancey/playground/mlab/ml/build/_deps/eigen-src -I/Users/yancey/playground/mlab/ml/build/_deps/eigen-src/unsupported/test/../../test -I/Users/yancey/playground/mlab/ml/build/_deps/eigen-src/unsupported/test/../../unsupported -I/Users/yancey/playground/mlab/ml/build/_deps/eigen-src/unsupported/test/../../Eigen -I/Users/yancey/playground/mlab/ml/build/_deps/eigen-build/unsupported/test/../../test
 
 CXX_FLAGSarm64 =  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -O3 -DNDEBUG -std=gnu++17 -arch arm64  -DEIGEN_TEST_MAX_SIZE=320  -DEIGEN_TEST_PART_4=1
 

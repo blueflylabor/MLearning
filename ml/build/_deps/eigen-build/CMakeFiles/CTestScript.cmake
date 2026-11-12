@@ -5,8 +5,8 @@
 cmake_minimum_required(VERSION 4.4.4)
 
 # CTest Start Step
-set(CTEST_SOURCE_DIRECTORY "/Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src")
-set(CTEST_BINARY_DIRECTORY "/Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build")
+set(CTEST_SOURCE_DIRECTORY "/Users/yancey/playground/mlab/ml/build/_deps/eigen-src")
+set(CTEST_BINARY_DIRECTORY "/Users/yancey/playground/mlab/ml/build/_deps/eigen-build")
 
 # CTest Update Step
 set(CTEST_UPDATE_COMMAND "/usr/bin/git")
@@ -62,7 +62,7 @@ set(CTEST_MEMORYCHECK_SANITIZER_OPTIONS "")
 set(CTEST_MEMORYCHECK_SUPPRESSIONS_FILE "")
 
 # CTest Submit Step
-set(CTEST_SITE "yanceys-macbook-air-2.local")
+set(CTEST_SITE "Yanceys-MacBook-Air-2.local")
 set(CTEST_BUILD_NAME "darwin-24.6.0-clang++-17.0.0-sse2-64bit")
 set(CTEST_SUBMIT_URL "http://my.cdash.org/submit.php?project=Eigen")
 set(CTEST_SUBMIT_INACTIVITY_TIMEOUT "")

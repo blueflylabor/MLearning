@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/yancey/Desktop/mlab/ml
+CMAKE_SOURCE_DIR = /Users/yancey/playground/mlab/ml
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/yancey/Desktop/mlab/ml/build
+CMAKE_BINARY_DIR = /Users/yancey/playground/mlab/ml/build
 
 # Include any dependencies generated for this target.
 include _deps/eigen-build/doc/snippets/CMakeFiles/compile_BiCGSTAB_step_by_step.dir/depend.make
@@ -76,16 +76,16 @@ _deps/eigen-build/doc/snippets/CMakeFiles/compile_BiCGSTAB_step_by_step.dir/comp
 _deps/eigen-build/doc/snippets/CMakeFiles/compile_BiCGSTAB_step_by_step.dir/compile_BiCGSTAB_step_by_step.cpp.o: _deps/eigen-build/doc/snippets/compile_BiCGSTAB_step_by_step.cpp
 _deps/eigen-build/doc/snippets/CMakeFiles/compile_BiCGSTAB_step_by_step.dir/compile_BiCGSTAB_step_by_step.cpp.o: _deps/eigen-src/doc/snippets/BiCGSTAB_step_by_step.cpp
 _deps/eigen-build/doc/snippets/CMakeFiles/compile_BiCGSTAB_step_by_step.dir/compile_BiCGSTAB_step_by_step.cpp.o: _deps/eigen-build/doc/snippets/CMakeFiles/compile_BiCGSTAB_step_by_step.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/yancey/Desktop/mlab/ml/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/eigen-build/doc/snippets/CMakeFiles/compile_BiCGSTAB_step_by_step.dir/compile_BiCGSTAB_step_by_step.cpp.o"
-	cd /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc/snippets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/eigen-build/doc/snippets/CMakeFiles/compile_BiCGSTAB_step_by_step.dir/compile_BiCGSTAB_step_by_step.cpp.o -MF CMakeFiles/compile_BiCGSTAB_step_by_step.dir/compile_BiCGSTAB_step_by_step.cpp.o.d -o CMakeFiles/compile_BiCGSTAB_step_by_step.dir/compile_BiCGSTAB_step_by_step.cpp.o -c /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc/snippets/compile_BiCGSTAB_step_by_step.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/yancey/playground/mlab/ml/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/eigen-build/doc/snippets/CMakeFiles/compile_BiCGSTAB_step_by_step.dir/compile_BiCGSTAB_step_by_step.cpp.o"
+	cd /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc/snippets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/eigen-build/doc/snippets/CMakeFiles/compile_BiCGSTAB_step_by_step.dir/compile_BiCGSTAB_step_by_step.cpp.o -MF CMakeFiles/compile_BiCGSTAB_step_by_step.dir/compile_BiCGSTAB_step_by_step.cpp.o.d -o CMakeFiles/compile_BiCGSTAB_step_by_step.dir/compile_BiCGSTAB_step_by_step.cpp.o -c /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc/snippets/compile_BiCGSTAB_step_by_step.cpp
 
 _deps/eigen-build/doc/snippets/CMakeFiles/compile_BiCGSTAB_step_by_step.dir/compile_BiCGSTAB_step_by_step.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/compile_BiCGSTAB_step_by_step.dir/compile_BiCGSTAB_step_by_step.cpp.i"
-	cd /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc/snippets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc/snippets/compile_BiCGSTAB_step_by_step.cpp > CMakeFiles/compile_BiCGSTAB_step_by_step.dir/compile_BiCGSTAB_step_by_step.cpp.i
+	cd /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc/snippets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc/snippets/compile_BiCGSTAB_step_by_step.cpp > CMakeFiles/compile_BiCGSTAB_step_by_step.dir/compile_BiCGSTAB_step_by_step.cpp.i
 
 _deps/eigen-build/doc/snippets/CMakeFiles/compile_BiCGSTAB_step_by_step.dir/compile_BiCGSTAB_step_by_step.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/compile_BiCGSTAB_step_by_step.dir/compile_BiCGSTAB_step_by_step.cpp.s"
-	cd /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc/snippets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc/snippets/compile_BiCGSTAB_step_by_step.cpp -o CMakeFiles/compile_BiCGSTAB_step_by_step.dir/compile_BiCGSTAB_step_by_step.cpp.s
+	cd /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc/snippets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc/snippets/compile_BiCGSTAB_step_by_step.cpp -o CMakeFiles/compile_BiCGSTAB_step_by_step.dir/compile_BiCGSTAB_step_by_step.cpp.s
 
 # Object files for target compile_BiCGSTAB_step_by_step
 compile_BiCGSTAB_step_by_step_OBJECTS = \
@@ -97,19 +97,19 @@ compile_BiCGSTAB_step_by_step_EXTERNAL_OBJECTS =
 _deps/eigen-build/doc/snippets/compile_BiCGSTAB_step_by_step: _deps/eigen-build/doc/snippets/CMakeFiles/compile_BiCGSTAB_step_by_step.dir/compile_BiCGSTAB_step_by_step.cpp.o
 _deps/eigen-build/doc/snippets/compile_BiCGSTAB_step_by_step: _deps/eigen-build/doc/snippets/CMakeFiles/compile_BiCGSTAB_step_by_step.dir/build.make
 _deps/eigen-build/doc/snippets/compile_BiCGSTAB_step_by_step: _deps/eigen-build/doc/snippets/CMakeFiles/compile_BiCGSTAB_step_by_step.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/yancey/Desktop/mlab/ml/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable compile_BiCGSTAB_step_by_step"
-	cd /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc/snippets && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/compile_BiCGSTAB_step_by_step.dir/link.txt --verbose=$(VERBOSE)
-	cd /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc/snippets && ./compile_BiCGSTAB_step_by_step >/Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc/snippets/BiCGSTAB_step_by_step.out
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/yancey/playground/mlab/ml/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable compile_BiCGSTAB_step_by_step"
+	cd /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc/snippets && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/compile_BiCGSTAB_step_by_step.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc/snippets && ./compile_BiCGSTAB_step_by_step >/Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc/snippets/BiCGSTAB_step_by_step.out
 
 # Rule to build all files generated by this target.
 _deps/eigen-build/doc/snippets/CMakeFiles/compile_BiCGSTAB_step_by_step.dir/build: _deps/eigen-build/doc/snippets/compile_BiCGSTAB_step_by_step
 .PHONY : _deps/eigen-build/doc/snippets/CMakeFiles/compile_BiCGSTAB_step_by_step.dir/build
 
 _deps/eigen-build/doc/snippets/CMakeFiles/compile_BiCGSTAB_step_by_step.dir/clean:
-	cd /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc/snippets && $(CMAKE_COMMAND) -P CMakeFiles/compile_BiCGSTAB_step_by_step.dir/cmake_clean.cmake
+	cd /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc/snippets && $(CMAKE_COMMAND) -P CMakeFiles/compile_BiCGSTAB_step_by_step.dir/cmake_clean.cmake
 .PHONY : _deps/eigen-build/doc/snippets/CMakeFiles/compile_BiCGSTAB_step_by_step.dir/clean
 
 _deps/eigen-build/doc/snippets/CMakeFiles/compile_BiCGSTAB_step_by_step.dir/depend:
-	cd /Users/yancey/Desktop/mlab/ml/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/yancey/Desktop/mlab/ml /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src/doc/snippets /Users/yancey/Desktop/mlab/ml/build /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc/snippets /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc/snippets/CMakeFiles/compile_BiCGSTAB_step_by_step.dir/DependInfo.cmake "--color=$(COLOR)" compile_BiCGSTAB_step_by_step
+	cd /Users/yancey/playground/mlab/ml/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/yancey/playground/mlab/ml /Users/yancey/playground/mlab/ml/build/_deps/eigen-src/doc/snippets /Users/yancey/playground/mlab/ml/build /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc/snippets /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc/snippets/CMakeFiles/compile_BiCGSTAB_step_by_step.dir/DependInfo.cmake "--color=$(COLOR)" compile_BiCGSTAB_step_by_step
 .PHONY : _deps/eigen-build/doc/snippets/CMakeFiles/compile_BiCGSTAB_step_by_step.dir/depend
 

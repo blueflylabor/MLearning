@@ -66,7 +66,7 @@ int main() {
     }
 
     std::cout << "Loaded Dataset (" << dataset.rows() << "x" << dataset.cols() << "):\n";
-    std::cout << dataset.topRows(std::min<Eigen::Index>(5, dataset.rows())) << "\n\n";
+    std::cout << dataset.topRows(std::min<Eigen::Index>(10, dataset.rows())) << "\n\n";
 
     // ---------------------------------------------------------
     // Part 2: Slicing Features (X) and Target (y)

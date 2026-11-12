@@ -4,14 +4,14 @@
 
 
 # Configuration directories and files
-SourceDirectory: /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src
-BuildDirectory: /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build
+SourceDirectory: /Users/yancey/playground/mlab/ml/build/_deps/eigen-src
+BuildDirectory: /Users/yancey/playground/mlab/ml/build/_deps/eigen-build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: yanceys-macbook-air-2.local
+Site: Yanceys-MacBook-Air-2.local
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: darwin-24.6.0-clang++-17.0.0-sse2-64bit
@@ -27,7 +27,7 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 UTC
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/opt/homebrew/bin/cmake" "/Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src"
+ConfigureCommand: "/opt/homebrew/bin/cmake" "/Users/yancey/playground/mlab/ml/build/_deps/eigen-src"
 MakeCommand: /opt/homebrew/bin/cmake --build . --target buildtests --config "${CTEST_CONFIGURATION_TYPE}" --  
 DefaultCTestConfigurationType: Release
 

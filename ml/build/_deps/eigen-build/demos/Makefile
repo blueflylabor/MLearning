@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/yancey/Desktop/mlab/ml
+CMAKE_SOURCE_DIR = /Users/yancey/playground/mlab/ml
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/yancey/Desktop/mlab/ml/build
+CMAKE_BINARY_DIR = /Users/yancey/playground/mlab/ml/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/yancey/Desktop/mlab/ml/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/yancey/Desktop/mlab/ml/build/CMakeFiles /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/demos//CMakeFiles/progress.marks
-	cd /Users/yancey/Desktop/mlab/ml/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/eigen-build/demos/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yancey/Desktop/mlab/ml/build/CMakeFiles 0
+	cd /Users/yancey/playground/mlab/ml/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/yancey/playground/mlab/ml/build/CMakeFiles /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/demos//CMakeFiles/progress.marks
+	cd /Users/yancey/playground/mlab/ml/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/eigen-build/demos/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yancey/playground/mlab/ml/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/yancey/Desktop/mlab/ml/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/eigen-build/demos/clean
+	cd /Users/yancey/playground/mlab/ml/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/eigen-build/demos/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/yancey/Desktop/mlab/ml/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/eigen-build/demos/preinstall
+	cd /Users/yancey/playground/mlab/ml/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/eigen-build/demos/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/yancey/Desktop/mlab/ml/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/eigen-build/demos/preinstall
+	cd /Users/yancey/playground/mlab/ml/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/eigen-build/demos/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/yancey/Desktop/mlab/ml/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/yancey/playground/mlab/ml/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/eigen-build/demos/CMakeFiles/demos.dir/rule:
-	cd /Users/yancey/Desktop/mlab/ml/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/eigen-build/demos/CMakeFiles/demos.dir/rule
+	cd /Users/yancey/playground/mlab/ml/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/eigen-build/demos/CMakeFiles/demos.dir/rule
 .PHONY : _deps/eigen-build/demos/CMakeFiles/demos.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ demos: _deps/eigen-build/demos/CMakeFiles/demos.dir/rule
 
 # fast build rule for target.
 demos/fast:
-	cd /Users/yancey/Desktop/mlab/ml/build && $(MAKE) $(MAKESILENT) -f _deps/eigen-build/demos/CMakeFiles/demos.dir/build.make _deps/eigen-build/demos/CMakeFiles/demos.dir/build
+	cd /Users/yancey/playground/mlab/ml/build && $(MAKE) $(MAKESILENT) -f _deps/eigen-build/demos/CMakeFiles/demos.dir/build.make _deps/eigen-build/demos/CMakeFiles/demos.dir/build
 .PHONY : demos/fast
 
 # Help Target
@@ -199,6 +199,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/yancey/Desktop/mlab/ml/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/yancey/playground/mlab/ml/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 4.4.4)
-set(CMAKE_MODULE_PATH "/Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src/cmake")
+set(CMAKE_MODULE_PATH "/Users/yancey/playground/mlab/ml/build/_deps/eigen-src/cmake")
 set(_CMAKE_CHECK_ENABLED_LANGUAGES "C;CXX")
 set(CMAKE_C_COMPILER "/usr/bin/cc")
 set(CMAKE_C_COMPILER_ID "AppleClang")

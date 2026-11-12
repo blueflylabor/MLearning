@@ -3,9 +3,9 @@
 # No other meaning or use of this file is supported.
 
 method=git
-command=/opt/homebrew/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/Users/yancey/Desktop/mlab/ml/build/_deps/eigen-subbuild/eigen-populate-prefix/tmp/eigen-populate-gitclone.cmake
-source_dir=/Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src
-work_dir=/Users/yancey/Desktop/mlab/ml/build/_deps
+command=/opt/homebrew/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/Users/yancey/playground/mlab/ml/build/_deps/eigen-subbuild/eigen-populate-prefix/tmp/eigen-populate-gitclone.cmake
+source_dir=/Users/yancey/playground/mlab/ml/build/_deps/eigen-src
+work_dir=/Users/yancey/playground/mlab/ml/build/_deps
 repository=https://gitlab.com/libeigen/eigen.git
 remote=origin
 init_submodules=TRUE

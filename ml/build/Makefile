@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/yancey/Desktop/mlab/ml
+CMAKE_SOURCE_DIR = /Users/yancey/playground/mlab/ml
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/yancey/Desktop/mlab/ml/build
+CMAKE_BINARY_DIR = /Users/yancey/playground/mlab/ml/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yancey/Desktop/mlab/ml/build/CMakeFiles /Users/yancey/Desktop/mlab/ml/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yancey/playground/mlab/ml/build/CMakeFiles /Users/yancey/playground/mlab/ml/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yancey/Desktop/mlab/ml/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yancey/playground/mlab/ml/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -186,6 +186,19 @@ depend:
 01data/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/01data.dir/build.make CMakeFiles/01data.dir/build
 .PHONY : 01data/fast
+
+#=============================================================================
+# Target rules for targets named 02lr
+
+# Build rule for target.
+02lr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 02lr
+.PHONY : 02lr
+
+# fast build rule for target.
+02lr/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/02lr.dir/build.make CMakeFiles/02lr.dir/build
+.PHONY : 02lr/fast
 
 #=============================================================================
 # Target rules for targets named buildtests
@@ -19891,6 +19904,30 @@ src/01_data.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/01data.dir/build.make CMakeFiles/01data.dir/src/01_data.cpp.s
 .PHONY : src/01_data.cpp.s
 
+src/02_lr.o: src/02_lr.cpp.o
+.PHONY : src/02_lr.o
+
+# target to build an object file
+src/02_lr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/02lr.dir/build.make CMakeFiles/02lr.dir/src/02_lr.cpp.o
+.PHONY : src/02_lr.cpp.o
+
+src/02_lr.i: src/02_lr.cpp.i
+.PHONY : src/02_lr.i
+
+# target to preprocess a source file
+src/02_lr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/02lr.dir/build.make CMakeFiles/02lr.dir/src/02_lr.cpp.i
+.PHONY : src/02_lr.cpp.i
+
+src/02_lr.s: src/02_lr.cpp.s
+.PHONY : src/02_lr.s
+
+# target to generate assembly for a file
+src/02_lr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/02lr.dir/build.make CMakeFiles/02lr.dir/src/02_lr.cpp.s
+.PHONY : src/02_lr.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -20076,6 +20113,7 @@ help:
 	@echo "... visitor"
 	@echo "... 00hello_world"
 	@echo "... 01data"
+	@echo "... 02lr"
 	@echo "... BVH_1"
 	@echo "... BVH_2"
 	@echo "... BVH_3"
@@ -21423,6 +21461,9 @@ help:
 	@echo "... src/01_data.o"
 	@echo "... src/01_data.i"
 	@echo "... src/01_data.s"
+	@echo "... src/02_lr.o"
+	@echo "... src/02_lr.i"
+	@echo "... src/02_lr.s"
 .PHONY : help
 
 

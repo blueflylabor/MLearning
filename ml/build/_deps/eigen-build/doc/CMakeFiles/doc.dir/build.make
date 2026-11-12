@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/yancey/Desktop/mlab/ml
+CMAKE_SOURCE_DIR = /Users/yancey/playground/mlab/ml
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/yancey/Desktop/mlab/ml/build
+CMAKE_BINARY_DIR = /Users/yancey/playground/mlab/ml/build
 
 # Utility rule file for doc.
 
@@ -67,14 +67,14 @@ include _deps/eigen-build/doc/CMakeFiles/doc.dir/compiler_depend.make
 include _deps/eigen-build/doc/CMakeFiles/doc.dir/progress.make
 
 _deps/eigen-build/doc/CMakeFiles/doc:
-	cd /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc && doxygen
-	cd /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc && doxygen Doxyfile-unsupported
-	cd /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc && /opt/homebrew/bin/cmake -E copy /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc/html/group__TopicUnalignedArrayAssert.html /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc/html/TopicUnalignedArrayAssert.html
-	cd /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc && /opt/homebrew/bin/cmake -E rename html eigen-doc
-	cd /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc && /opt/homebrew/bin/cmake -E remove eigen-doc/eigen-doc.tgz eigen-doc/unsupported/_formulas.log eigen-doc/_formulas.log
-	cd /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc && /opt/homebrew/bin/cmake -E tar cfz eigen-doc.tgz eigen-doc
-	cd /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc && /opt/homebrew/bin/cmake -E rename eigen-doc.tgz eigen-doc/eigen-doc.tgz
-	cd /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc && /opt/homebrew/bin/cmake -E rename eigen-doc html
+	cd /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc && doxygen
+	cd /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc && doxygen Doxyfile-unsupported
+	cd /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc && /opt/homebrew/bin/cmake -E copy /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc/html/group__TopicUnalignedArrayAssert.html /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc/html/TopicUnalignedArrayAssert.html
+	cd /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc && /opt/homebrew/bin/cmake -E rename html eigen-doc
+	cd /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc && /opt/homebrew/bin/cmake -E remove eigen-doc/eigen-doc.tgz eigen-doc/unsupported/_formulas.log eigen-doc/_formulas.log
+	cd /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc && /opt/homebrew/bin/cmake -E tar cfz eigen-doc.tgz eigen-doc
+	cd /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc && /opt/homebrew/bin/cmake -E rename eigen-doc.tgz eigen-doc/eigen-doc.tgz
+	cd /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc && /opt/homebrew/bin/cmake -E rename eigen-doc html
 
 _deps/eigen-build/doc/CMakeFiles/doc.dir/codegen:
 .PHONY : _deps/eigen-build/doc/CMakeFiles/doc.dir/codegen
@@ -88,10 +88,10 @@ _deps/eigen-build/doc/CMakeFiles/doc.dir/build: doc
 .PHONY : _deps/eigen-build/doc/CMakeFiles/doc.dir/build
 
 _deps/eigen-build/doc/CMakeFiles/doc.dir/clean:
-	cd /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc && $(CMAKE_COMMAND) -P CMakeFiles/doc.dir/cmake_clean.cmake
+	cd /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc && $(CMAKE_COMMAND) -P CMakeFiles/doc.dir/cmake_clean.cmake
 .PHONY : _deps/eigen-build/doc/CMakeFiles/doc.dir/clean
 
 _deps/eigen-build/doc/CMakeFiles/doc.dir/depend:
-	cd /Users/yancey/Desktop/mlab/ml/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/yancey/Desktop/mlab/ml /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src/doc /Users/yancey/Desktop/mlab/ml/build /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc/CMakeFiles/doc.dir/DependInfo.cmake "--color=$(COLOR)" doc
+	cd /Users/yancey/playground/mlab/ml/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/yancey/playground/mlab/ml /Users/yancey/playground/mlab/ml/build/_deps/eigen-src/doc /Users/yancey/playground/mlab/ml/build /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc/CMakeFiles/doc.dir/DependInfo.cmake "--color=$(COLOR)" doc
 .PHONY : _deps/eigen-build/doc/CMakeFiles/doc.dir/depend
 

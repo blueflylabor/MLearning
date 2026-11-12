@@ -50,7 +50,7 @@ unset(_cmake_expected_targets)
 add_library(Eigen3::Eigen INTERFACE IMPORTED)
 
 set_target_properties(Eigen3::Eigen PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src"
+  INTERFACE_INCLUDE_DIRECTORIES "/Users/yancey/playground/mlab/ml/build/_deps/eigen-src"
 )
 
 # This file does not depend on other imported targets which have

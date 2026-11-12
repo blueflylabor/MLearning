@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/yancey/Desktop/mlab/ml
+CMAKE_SOURCE_DIR = /Users/yancey/playground/mlab/ml
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/yancey/Desktop/mlab/ml/build
+CMAKE_BINARY_DIR = /Users/yancey/playground/mlab/ml/build
 
 # Utility rule file for lapack.
 
@@ -77,10 +77,10 @@ _deps/eigen-build/lapack/CMakeFiles/lapack.dir/build: lapack
 .PHONY : _deps/eigen-build/lapack/CMakeFiles/lapack.dir/build
 
 _deps/eigen-build/lapack/CMakeFiles/lapack.dir/clean:
-	cd /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/lapack && $(CMAKE_COMMAND) -P CMakeFiles/lapack.dir/cmake_clean.cmake
+	cd /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/lapack && $(CMAKE_COMMAND) -P CMakeFiles/lapack.dir/cmake_clean.cmake
 .PHONY : _deps/eigen-build/lapack/CMakeFiles/lapack.dir/clean
 
 _deps/eigen-build/lapack/CMakeFiles/lapack.dir/depend:
-	cd /Users/yancey/Desktop/mlab/ml/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/yancey/Desktop/mlab/ml /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src/lapack /Users/yancey/Desktop/mlab/ml/build /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/lapack /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/lapack/CMakeFiles/lapack.dir/DependInfo.cmake "--color=$(COLOR)" lapack
+	cd /Users/yancey/playground/mlab/ml/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/yancey/playground/mlab/ml /Users/yancey/playground/mlab/ml/build/_deps/eigen-src/lapack /Users/yancey/playground/mlab/ml/build /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/lapack /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/lapack/CMakeFiles/lapack.dir/DependInfo.cmake "--color=$(COLOR)" lapack
 .PHONY : _deps/eigen-build/lapack/CMakeFiles/lapack.dir/depend
 

@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/yancey/Desktop/mlab/ml
+CMAKE_SOURCE_DIR = /Users/yancey/playground/mlab/ml
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/yancey/Desktop/mlab/ml/build
+CMAKE_BINARY_DIR = /Users/yancey/playground/mlab/ml/build
 
 # Utility rule file for inplace_decomposition.
 
@@ -77,10 +77,10 @@ _deps/eigen-build/test/CMakeFiles/inplace_decomposition.dir/build: inplace_decom
 .PHONY : _deps/eigen-build/test/CMakeFiles/inplace_decomposition.dir/build
 
 _deps/eigen-build/test/CMakeFiles/inplace_decomposition.dir/clean:
-	cd /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/test && $(CMAKE_COMMAND) -P CMakeFiles/inplace_decomposition.dir/cmake_clean.cmake
+	cd /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/test && $(CMAKE_COMMAND) -P CMakeFiles/inplace_decomposition.dir/cmake_clean.cmake
 .PHONY : _deps/eigen-build/test/CMakeFiles/inplace_decomposition.dir/clean
 
 _deps/eigen-build/test/CMakeFiles/inplace_decomposition.dir/depend:
-	cd /Users/yancey/Desktop/mlab/ml/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/yancey/Desktop/mlab/ml /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src/test /Users/yancey/Desktop/mlab/ml/build /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/test /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/test/CMakeFiles/inplace_decomposition.dir/DependInfo.cmake "--color=$(COLOR)" inplace_decomposition
+	cd /Users/yancey/playground/mlab/ml/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/yancey/playground/mlab/ml /Users/yancey/playground/mlab/ml/build/_deps/eigen-src/test /Users/yancey/playground/mlab/ml/build /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/test /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/test/CMakeFiles/inplace_decomposition.dir/DependInfo.cmake "--color=$(COLOR)" inplace_decomposition
 .PHONY : _deps/eigen-build/test/CMakeFiles/inplace_decomposition.dir/depend
 

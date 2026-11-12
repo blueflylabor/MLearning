@@ -18,6 +18,8 @@ FetchContent_MakeAvailable(Eigen)
 # Define the executable
 add_executable(00hello_world src/00_hello_world.cpp)
 add_executable(01data src/01_data.cpp)
+add_executable(02lr src/02_lr.cpp)
 # Link Eigen to our executable
 target_link_libraries(00hello_world PRIVATE Eigen3::Eigen)
 target_link_libraries(01data PRIVATE Eigen3::Eigen)
+target_link_libraries(02lr PRIVATE Eigen3::Eigen)

@@ -4,7 +4,7 @@
 # compile Fortran with /opt/homebrew/bin/gfortran
 Fortran_DEFINES = 
 
-Fortran_INCLUDES = -I/Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src
+Fortran_INCLUDES = -I/Users/yancey/playground/mlab/ml/build/_deps/eigen-src
 
 Fortran_FLAGSarm64 = -O3
 

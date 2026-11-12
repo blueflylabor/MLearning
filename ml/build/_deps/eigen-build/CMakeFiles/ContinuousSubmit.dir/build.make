@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/yancey/Desktop/mlab/ml
+CMAKE_SOURCE_DIR = /Users/yancey/playground/mlab/ml
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/yancey/Desktop/mlab/ml/build
+CMAKE_BINARY_DIR = /Users/yancey/playground/mlab/ml/build
 
 # Utility rule file for ContinuousSubmit.
 
@@ -67,7 +67,7 @@ include _deps/eigen-build/CMakeFiles/ContinuousSubmit.dir/compiler_depend.make
 include _deps/eigen-build/CMakeFiles/ContinuousSubmit.dir/progress.make
 
 _deps/eigen-build/CMakeFiles/ContinuousSubmit:
-	cd /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build && /opt/homebrew/bin/ctest -DMODEL=Continuous -DACTIONS=Submit -S CMakeFiles/CTestScript.cmake -V
+	cd /Users/yancey/playground/mlab/ml/build/_deps/eigen-build && /opt/homebrew/bin/ctest -DMODEL=Continuous -DACTIONS=Submit -S CMakeFiles/CTestScript.cmake -V
 
 _deps/eigen-build/CMakeFiles/ContinuousSubmit.dir/codegen:
 .PHONY : _deps/eigen-build/CMakeFiles/ContinuousSubmit.dir/codegen
@@ -81,10 +81,10 @@ _deps/eigen-build/CMakeFiles/ContinuousSubmit.dir/build: ContinuousSubmit
 .PHONY : _deps/eigen-build/CMakeFiles/ContinuousSubmit.dir/build
 
 _deps/eigen-build/CMakeFiles/ContinuousSubmit.dir/clean:
-	cd /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build && $(CMAKE_COMMAND) -P CMakeFiles/ContinuousSubmit.dir/cmake_clean.cmake
+	cd /Users/yancey/playground/mlab/ml/build/_deps/eigen-build && $(CMAKE_COMMAND) -P CMakeFiles/ContinuousSubmit.dir/cmake_clean.cmake
 .PHONY : _deps/eigen-build/CMakeFiles/ContinuousSubmit.dir/clean
 
 _deps/eigen-build/CMakeFiles/ContinuousSubmit.dir/depend:
-	cd /Users/yancey/Desktop/mlab/ml/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/yancey/Desktop/mlab/ml /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src /Users/yancey/Desktop/mlab/ml/build /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/CMakeFiles/ContinuousSubmit.dir/DependInfo.cmake "--color=$(COLOR)" ContinuousSubmit
+	cd /Users/yancey/playground/mlab/ml/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/yancey/playground/mlab/ml /Users/yancey/playground/mlab/ml/build/_deps/eigen-src /Users/yancey/playground/mlab/ml/build /Users/yancey/playground/mlab/ml/build/_deps/eigen-build /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/CMakeFiles/ContinuousSubmit.dir/DependInfo.cmake "--color=$(COLOR)" ContinuousSubmit
 .PHONY : _deps/eigen-build/CMakeFiles/ContinuousSubmit.dir/depend
 

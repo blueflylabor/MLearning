@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src
+CXX_INCLUDES = -I/Users/yancey/playground/mlab/ml/build/_deps/eigen-src
 
 CXX_FLAGSarm64 = -std=gnu++17 -arch arm64
 

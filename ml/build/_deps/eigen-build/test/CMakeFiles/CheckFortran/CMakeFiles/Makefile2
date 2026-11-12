@@ -54,10 +54,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/test/CMakeFiles/CheckFortran
+CMAKE_SOURCE_DIR = /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/test/CMakeFiles/CheckFortran
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/test/CMakeFiles/CheckFortran
+CMAKE_BINARY_DIR = /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/test/CMakeFiles/CheckFortran
 
 #=============================================================================
 # Directory level rules for the build root directory

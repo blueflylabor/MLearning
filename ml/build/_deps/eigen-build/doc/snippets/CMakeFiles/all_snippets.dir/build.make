@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/yancey/Desktop/mlab/ml
+CMAKE_SOURCE_DIR = /Users/yancey/playground/mlab/ml
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/yancey/Desktop/mlab/ml/build
+CMAKE_BINARY_DIR = /Users/yancey/playground/mlab/ml/build
 
 # Utility rule file for all_snippets.
 
@@ -77,10 +77,10 @@ _deps/eigen-build/doc/snippets/CMakeFiles/all_snippets.dir/build: all_snippets
 .PHONY : _deps/eigen-build/doc/snippets/CMakeFiles/all_snippets.dir/build
 
 _deps/eigen-build/doc/snippets/CMakeFiles/all_snippets.dir/clean:
-	cd /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc/snippets && $(CMAKE_COMMAND) -P CMakeFiles/all_snippets.dir/cmake_clean.cmake
+	cd /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc/snippets && $(CMAKE_COMMAND) -P CMakeFiles/all_snippets.dir/cmake_clean.cmake
 .PHONY : _deps/eigen-build/doc/snippets/CMakeFiles/all_snippets.dir/clean
 
 _deps/eigen-build/doc/snippets/CMakeFiles/all_snippets.dir/depend:
-	cd /Users/yancey/Desktop/mlab/ml/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/yancey/Desktop/mlab/ml /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src/doc/snippets /Users/yancey/Desktop/mlab/ml/build /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc/snippets /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc/snippets/CMakeFiles/all_snippets.dir/DependInfo.cmake "--color=$(COLOR)" all_snippets
+	cd /Users/yancey/playground/mlab/ml/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/yancey/playground/mlab/ml /Users/yancey/playground/mlab/ml/build/_deps/eigen-src/doc/snippets /Users/yancey/playground/mlab/ml/build /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc/snippets /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc/snippets/CMakeFiles/all_snippets.dir/DependInfo.cmake "--color=$(COLOR)" all_snippets
 .PHONY : _deps/eigen-build/doc/snippets/CMakeFiles/all_snippets.dir/depend
 

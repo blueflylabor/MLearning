@@ -1,9 +1,9 @@
 
-set(CTEST_SOURCE_DIRECTORY  "/Users/yancey/Desktop/mlab/ml")
-set(CTEST_BINARY_DIRECTORY  "/Users/yancey/Desktop/mlab/ml/build")
+set(CTEST_SOURCE_DIRECTORY  "/Users/yancey/playground/mlab/ml")
+set(CTEST_BINARY_DIRECTORY  "/Users/yancey/playground/mlab/ml/build")
 set(CTEST_CMAKE_GENERATOR   "Unix Makefiles")
 set(CTEST_BUILD_NAME        "darwin-24.6.0-clang++-17.0.0-sse2-64bit")
-set(CTEST_SITE              "yanceys-macbook-air-2.local")
+set(CTEST_SITE              "Yanceys-MacBook-Air-2.local")
 
 set(MODEL Experimental)
 if(${CTEST_SCRIPT_ARG} MATCHES Nightly)

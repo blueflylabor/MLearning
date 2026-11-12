@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/yancey/Desktop/mlab/ml
+CMAKE_SOURCE_DIR = /Users/yancey/playground/mlab/ml
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/yancey/Desktop/mlab/ml/build
+CMAKE_BINARY_DIR = /Users/yancey/playground/mlab/ml/build
 
 # Include any dependencies generated for this target.
 include _deps/eigen-build/doc/examples/CMakeFiles/QuickStart_example.dir/depend.make
@@ -75,16 +75,16 @@ _deps/eigen-build/doc/examples/CMakeFiles/QuickStart_example.dir/codegen:
 _deps/eigen-build/doc/examples/CMakeFiles/QuickStart_example.dir/QuickStart_example.cpp.o: _deps/eigen-build/doc/examples/CMakeFiles/QuickStart_example.dir/flags.make
 _deps/eigen-build/doc/examples/CMakeFiles/QuickStart_example.dir/QuickStart_example.cpp.o: _deps/eigen-src/doc/examples/QuickStart_example.cpp
 _deps/eigen-build/doc/examples/CMakeFiles/QuickStart_example.dir/QuickStart_example.cpp.o: _deps/eigen-build/doc/examples/CMakeFiles/QuickStart_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/yancey/Desktop/mlab/ml/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/eigen-build/doc/examples/CMakeFiles/QuickStart_example.dir/QuickStart_example.cpp.o"
-	cd /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/eigen-build/doc/examples/CMakeFiles/QuickStart_example.dir/QuickStart_example.cpp.o -MF CMakeFiles/QuickStart_example.dir/QuickStart_example.cpp.o.d -o CMakeFiles/QuickStart_example.dir/QuickStart_example.cpp.o -c /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src/doc/examples/QuickStart_example.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/yancey/playground/mlab/ml/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/eigen-build/doc/examples/CMakeFiles/QuickStart_example.dir/QuickStart_example.cpp.o"
+	cd /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/eigen-build/doc/examples/CMakeFiles/QuickStart_example.dir/QuickStart_example.cpp.o -MF CMakeFiles/QuickStart_example.dir/QuickStart_example.cpp.o.d -o CMakeFiles/QuickStart_example.dir/QuickStart_example.cpp.o -c /Users/yancey/playground/mlab/ml/build/_deps/eigen-src/doc/examples/QuickStart_example.cpp
 
 _deps/eigen-build/doc/examples/CMakeFiles/QuickStart_example.dir/QuickStart_example.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuickStart_example.dir/QuickStart_example.cpp.i"
-	cd /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src/doc/examples/QuickStart_example.cpp > CMakeFiles/QuickStart_example.dir/QuickStart_example.cpp.i
+	cd /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yancey/playground/mlab/ml/build/_deps/eigen-src/doc/examples/QuickStart_example.cpp > CMakeFiles/QuickStart_example.dir/QuickStart_example.cpp.i
 
 _deps/eigen-build/doc/examples/CMakeFiles/QuickStart_example.dir/QuickStart_example.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuickStart_example.dir/QuickStart_example.cpp.s"
-	cd /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src/doc/examples/QuickStart_example.cpp -o CMakeFiles/QuickStart_example.dir/QuickStart_example.cpp.s
+	cd /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yancey/playground/mlab/ml/build/_deps/eigen-src/doc/examples/QuickStart_example.cpp -o CMakeFiles/QuickStart_example.dir/QuickStart_example.cpp.s
 
 # Object files for target QuickStart_example
 QuickStart_example_OBJECTS = \
@@ -96,19 +96,19 @@ QuickStart_example_EXTERNAL_OBJECTS =
 _deps/eigen-build/doc/examples/QuickStart_example: _deps/eigen-build/doc/examples/CMakeFiles/QuickStart_example.dir/QuickStart_example.cpp.o
 _deps/eigen-build/doc/examples/QuickStart_example: _deps/eigen-build/doc/examples/CMakeFiles/QuickStart_example.dir/build.make
 _deps/eigen-build/doc/examples/QuickStart_example: _deps/eigen-build/doc/examples/CMakeFiles/QuickStart_example.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/yancey/Desktop/mlab/ml/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable QuickStart_example"
-	cd /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/QuickStart_example.dir/link.txt --verbose=$(VERBOSE)
-	cd /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc/examples && ./QuickStart_example >/Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc/examples/QuickStart_example.out
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/yancey/playground/mlab/ml/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable QuickStart_example"
+	cd /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/QuickStart_example.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc/examples && ./QuickStart_example >/Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc/examples/QuickStart_example.out
 
 # Rule to build all files generated by this target.
 _deps/eigen-build/doc/examples/CMakeFiles/QuickStart_example.dir/build: _deps/eigen-build/doc/examples/QuickStart_example
 .PHONY : _deps/eigen-build/doc/examples/CMakeFiles/QuickStart_example.dir/build
 
 _deps/eigen-build/doc/examples/CMakeFiles/QuickStart_example.dir/clean:
-	cd /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc/examples && $(CMAKE_COMMAND) -P CMakeFiles/QuickStart_example.dir/cmake_clean.cmake
+	cd /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc/examples && $(CMAKE_COMMAND) -P CMakeFiles/QuickStart_example.dir/cmake_clean.cmake
 .PHONY : _deps/eigen-build/doc/examples/CMakeFiles/QuickStart_example.dir/clean
 
 _deps/eigen-build/doc/examples/CMakeFiles/QuickStart_example.dir/depend:
-	cd /Users/yancey/Desktop/mlab/ml/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/yancey/Desktop/mlab/ml /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-src/doc/examples /Users/yancey/Desktop/mlab/ml/build /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc/examples /Users/yancey/Desktop/mlab/ml/build/_deps/eigen-build/doc/examples/CMakeFiles/QuickStart_example.dir/DependInfo.cmake "--color=$(COLOR)" QuickStart_example
+	cd /Users/yancey/playground/mlab/ml/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/yancey/playground/mlab/ml /Users/yancey/playground/mlab/ml/build/_deps/eigen-src/doc/examples /Users/yancey/playground/mlab/ml/build /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc/examples /Users/yancey/playground/mlab/ml/build/_deps/eigen-build/doc/examples/CMakeFiles/QuickStart_example.dir/DependInfo.cmake "--color=$(COLOR)" QuickStart_example
 .PHONY : _deps/eigen-build/doc/examples/CMakeFiles/QuickStart_example.dir/depend
 
