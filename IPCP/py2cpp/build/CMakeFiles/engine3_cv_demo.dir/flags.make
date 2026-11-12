@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /opt/homebrew/include/eigen3 -isystem /opt/homebrew/Cellar/opencv/5.0.0_11/include/opencv5
+CXX_INCLUDES = -isystem /opt/homebrew/Cellar/opencv/5.0.0_11/include/opencv5 -isystem /opt/homebrew/include/eigen3
 
 CXX_FLAGSarm64 = -std=gnu++17 -arch arm64
 

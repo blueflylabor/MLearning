@@ -68,7 +68,7 @@ int main() {
     // 1. Mean Filter (均值滤波器 3x3)
     // -------------------------------------------------------------
     Eigen::MatrixXf mean_eigen = Eigen::MatrixXf::Zero(N, N);
-    mean_eigen.block<3, 3>(1, 1).setOnes();
+    mean_eigen.block<3, 3>(1, 1).setOnes();;
     cv::Mat mean_filter;
     cv::eigen2cv(mean_eigen, mean_filter);
 
@@ -171,5 +171,21 @@ int main() {
     cv::imshow("Frequency Domain Filter Visualizations", canvas_8u);
     cv::waitKey(0);
 
+
+
+
+    cv::Mat img = cv::imread("../../lena.png", cv::IMREAD_GRAYSCALE);
+    cv::imshow("", img);
+    cv::waitKey(0);
+    cv::Mat img_float;
+    img.convertTo(img_float, CV_32F);
+    cv::Mat fft_img;
+    cv::dft(img_float, fft_img, cv::DFT_COMPLEX_OUTPUT);
+    cv::imshow("Magnitude Spectrum", fft_img);
+    cv::waitKey(0);
+    cv::Mat ffts_img;
+    fftshift(img_float, ffts_img);
+    cv::imshow("Centered Spectrum", ffts_img);
+    cv::waitKey(0);
     return 0;
 }

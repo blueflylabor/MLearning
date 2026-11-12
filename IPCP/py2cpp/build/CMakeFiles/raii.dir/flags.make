@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/opt/homebrew/Cellar/opencv/5.0.0_11/include/opencv5
 
 CXX_FLAGSarm64 = -std=gnu++17 -arch arm64
 
