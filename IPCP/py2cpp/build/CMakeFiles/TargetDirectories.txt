@@ -1,8 +1,0 @@
-/Users/yancey/Desktop/MLearning/IPCP/py2cpp/build/CMakeFiles/raii.dir
-/Users/yancey/Desktop/MLearning/IPCP/py2cpp/build/CMakeFiles/engine3_cv_demo.dir
-/Users/yancey/Desktop/MLearning/IPCP/py2cpp/build/CMakeFiles/l3cache.dir
-/Users/yancey/Desktop/MLearning/IPCP/py2cpp/build/CMakeFiles/gemm.dir
-/Users/yancey/Desktop/MLearning/IPCP/py2cpp/build/CMakeFiles/tensorTest.dir
-/Users/yancey/Desktop/MLearning/IPCP/py2cpp/build/CMakeFiles/fdf.dir
-/Users/yancey/Desktop/MLearning/IPCP/py2cpp/build/CMakeFiles/edit_cache.dir
-/Users/yancey/Desktop/MLearning/IPCP/py2cpp/build/CMakeFiles/rebuild_cache.dir
